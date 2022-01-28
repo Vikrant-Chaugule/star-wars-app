@@ -19,7 +19,7 @@ function App() {
           <Route path="/planets" element={<Planets />} />
           <Route path="/species" element={<Species />} />
           <Route path="/starships" element={<Starships />} />
-          <Route path="/vehiclse" element={<Vehicles />} />
+          <Route path="/vehicles" element={<Vehicles />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
       </Router>
