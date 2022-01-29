@@ -7,12 +7,13 @@ export const useSearchData = () => {
 
   const onSearch = (value: string) => {
     if (value !== "") {
-      const result = data.filter((info: any) =>
-        info?.name.toLowerCase().includes(value.toLowerCase())
-      );
+      const result = data.filter((info: any) => {
+        const key = info.name || info.title;
+        return key.toLowerCase().includes(value.toLowerCase());
+      });
       setFilteredData(result);
     } else {
-      setFilteredData(filteredData);
+      setFilteredData(data);
     }
 
     setSearchValue(value);

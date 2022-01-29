@@ -51,7 +51,7 @@ export const Characters = () => {
             );
           })
         ) : (
-          <ListItem id="" index={0} title="No Character Found" subTitle="" />
+          <ListItem id="" index={-1} title="Character Found" subTitle="" />
         )}
       </div>
     </div>
