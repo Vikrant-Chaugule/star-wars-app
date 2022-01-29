@@ -26,7 +26,7 @@ export const Films = () => {
               id={id}
               index={index}
               title={title}
-              subTitle={`Released on ${releaseDate}`}
+              subTitle={releaseDate ? `Released on ${releaseDate}` : ""}
             />
           )
         )}

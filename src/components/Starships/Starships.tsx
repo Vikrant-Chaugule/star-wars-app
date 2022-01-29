@@ -26,7 +26,7 @@ export const Starships = () => {
               id={id}
               index={index}
               title={name}
-              subTitle={`Model ${model}`}
+              subTitle={`Model - ${model ?? "N/A"}`}
             />
           )
         )}

@@ -26,7 +26,7 @@ export const Planets = () => {
               id={id}
               index={index}
               title={name}
-              subTitle={`Population - ${population}`}
+              subTitle={`Population - ${population ?? "N/A"}`}
             />
           )
         )}
