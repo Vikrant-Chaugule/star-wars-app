@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  /* background-image: url("./assets/star-wars.jpg");
-  background-size: cover; 
-} */
-
 html {
   background: black url("./assets/stars.png") repeat top center;
 }

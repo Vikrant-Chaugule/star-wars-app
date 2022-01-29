@@ -1,4 +1,4 @@
-import banner from "../../assets/star-wars-3.png";
+import banner from "../../assets/star-wars.png";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
 

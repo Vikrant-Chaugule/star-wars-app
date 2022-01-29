@@ -24,21 +24,6 @@
   padding: 2rem;
 }
 
-/* .planet-item {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0.5rem;
-}
-
-.label {
-  width: 150px;
-}
-
-.info {
-  margin-left: 1rem;
-  width: 50rem;
-} */
-
 @media screen and (max-width: 768px) {
   .planet-details-header {
     display: flex;
@@ -52,20 +37,4 @@
   .planets-details-info {
     padding: 1rem;
   }
-
-  /* .planet-item {
-    display: flex;
-    flex-direction: column;
-    min-height: 100px;
-  }
-
-  .label {
-    width: 100px;
-  }
-
-  .info {
-    margin-left: 0;
-    width: 100%;
-    margin-top: 5px;
-  } */
 }

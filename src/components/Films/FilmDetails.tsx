@@ -24,13 +24,11 @@ export const FilmDetails = () => {
 
   return (
     <div className="film-details">
-      {/* Header */}
       <div className="film-details-header">
         <BackButton onClick={onBack} />
         <h1>{title}</h1>
       </div>
 
-      {/* Details */}
       <div className="films-details-info">
         <DetailsItemRowProps label="Release Date" info={releaseDate} />
         <DetailsItemRowProps label="Description" info={openingCrawl} />
