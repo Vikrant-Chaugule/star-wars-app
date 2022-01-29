@@ -3,9 +3,6 @@
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  /* background-color: black; */
-  /* background-color: rgb(17, 16, 15); */
-
   color: #ffc107;
   flex: 1;
 }
@@ -32,9 +29,6 @@
   font-weight: bold;
   margin: 0.5rem;
 }
-/* .nav-links-item:hover {
-  background-color: rgb(226, 226, 189);
-} */
 
 .ham-burger {
   display: none;
@@ -81,6 +75,6 @@
     display: flex;
     position: absolute;
     background-color: rgb(17, 16, 15);
-    top: 50px;
+    top: 85px;
   }
 }
