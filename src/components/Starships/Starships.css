@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  color: yellow;
+  color: #ffc107;
 }
 
 .starships-header input {

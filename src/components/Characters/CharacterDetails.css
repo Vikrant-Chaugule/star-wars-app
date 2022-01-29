@@ -12,7 +12,7 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 100px;
-  color: yellow;
+  color: #ffc107;
 }
 
 .character-details-info {
@@ -20,7 +20,7 @@
   flex-direction: column;
   margin-top: 100px;
   background-color: #141414;
-  color: yellow;
+  color: #ffc107;
   padding: 2rem;
 }
 

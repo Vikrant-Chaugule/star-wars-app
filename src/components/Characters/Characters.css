@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  color: yellow;
+  color: #ffc107;
 }
 
 .characters-header input {
@@ -32,7 +32,7 @@
   padding: 1rem;
   margin: 1rem;
   background-color: #2f2f2f;
-  color: yellow;
+  color: #ffc107;
   text-decoration: none;
 }
 

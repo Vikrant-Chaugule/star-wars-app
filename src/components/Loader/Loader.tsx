@@ -6,7 +6,7 @@ export const Loader = () => {
     <div className="loader">
       <MutatingDots
         ariaLabel="loading-indicator"
-        color="yellow"
+        color="#ffc107"
         secondaryColor="lightyellow"
         width={100}
       />

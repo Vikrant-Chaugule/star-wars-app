@@ -13,6 +13,7 @@ import { FilmDetails } from "./components/Films/FilmDetails";
 import { CharacterDetails } from "./components/Characters/CharacterDetails";
 import { PlanetDetails } from "./components/Planets/PlanetDetails";
 import { StarshipDetails } from "./components/Starships/StarshipDetails";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
         </Routes>
 
-        {/* Footer */}
+        <Footer />
       </Router>
     </div>
   );
