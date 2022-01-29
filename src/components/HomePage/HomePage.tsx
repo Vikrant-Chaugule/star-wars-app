@@ -1,7 +1,13 @@
-// import banner from "../../assets/star-wars-title.jpg";
 import banner from "../../assets/star-wars-3.png";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
+
+import films from "../../assets/films.jpg";
+import characters from "../../assets/characters.jpg";
+import plannets from "../../assets/planets.jpg";
+import species from "../../assets/species.jpg";
+import starships from "../../assets/starships.jpg";
+import vehicles from "../../assets/vehicles.png";
 
 const HomePage = () => {
   return (
@@ -11,22 +17,28 @@ const HomePage = () => {
       </div>
       <div className="cards-container">
         <Link to="films" className="card">
-          Films
+          <img src={films} alt="Films" />
+          <h2>Films</h2>
         </Link>
         <Link to="characters" className="card">
-          Characters
+          <img src={characters} alt="Films" />
+          <h2>Characters</h2>
         </Link>
         <Link to="planets" className="card">
-          Planets
-        </Link>
-        <Link to="species" className="card">
-          Species
+          <img src={plannets} alt="Films" />
+          <h2>Planets</h2>
         </Link>
         <Link to="starships" className="card">
-          Starships
+          <img src={starships} alt="Films" />
+          <h2>Starships</h2>
+        </Link>
+        <Link to="species" className="card">
+          <img src={species} alt="Films" />
+          <h2>Species</h2>
         </Link>
         <Link to="vehicles" className="card">
-          Vehicles
+          <img src={vehicles} alt="Films" />
+          <h2>Vehicles</h2>
         </Link>
       </div>
     </div>
