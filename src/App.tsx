@@ -9,6 +9,7 @@ import { Species } from "./components/Species/Species";
 import { Starships } from "./components/Starships/Starships";
 import { Vehicles } from "./components/Vehicles/Vehicles";
 import NavBar from "./components/NavBar/NavBar";
+import { FilmDetails } from "./components/Films/FilmDetails";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
         <Routes>
           <Route path="/films" element={<Films />} />
+          <Route path="/films/:id" element={<FilmDetails />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/planets" element={<Planets />} />
           <Route path="/species" element={<Species />} />
@@ -25,6 +27,8 @@ function App() {
           <Route path="/vehicles" element={<Vehicles />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
+
+        {/* Footer */}
       </Router>
     </div>
   );
