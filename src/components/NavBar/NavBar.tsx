@@ -23,27 +23,27 @@ const NavBar = () => {
         <NavLinkItem path={"/films"} label="Films" onClick={toggleNavMenu} />
         <NavLinkItem
           path={"/characters"}
-          label="characters"
+          label="Characters"
           onClick={toggleNavMenu}
         />
         <NavLinkItem
           path={"/planets"}
-          label="planets"
+          label="Planets"
           onClick={toggleNavMenu}
         />
         <NavLinkItem
           path={"/starships"}
-          label="starships"
+          label="Starships"
           onClick={toggleNavMenu}
         />
         <NavLinkItem
           path={"/species"}
-          label="species"
+          label="Species"
           onClick={toggleNavMenu}
         />
         <NavLinkItem
-          path={"/species"}
-          label="species"
+          path={"/vehicles"}
+          label="Vehicles"
           onClick={toggleNavMenu}
         />
       </ul>

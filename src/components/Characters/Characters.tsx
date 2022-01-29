@@ -1,16 +1,15 @@
 import { useQuery } from "@apollo/client";
 import { GET_ALL_CHARACTERS } from "../../queries/characterQueries";
 import { ListItem } from "../ListItem/ListItem";
+import { Loader } from "../Loader/Loader";
 import "./Characters.css";
-import { Audio } from "react-loader-spinner";
 
 export const Characters = () => {
   const { error, loading, data } = useQuery(GET_ALL_CHARACTERS);
 
   if (error) return <p>Error</p>;
 
-  if (loading)
-    return <Audio height="100" width="100" color="grey" ariaLabel="loading" />;
+  if (loading) return <Loader />;
 
   return (
     <div className="characters">
