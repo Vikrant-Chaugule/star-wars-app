@@ -4,7 +4,34 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   /* background-image: url("./assets/star-wars.jpg");
-  background-size: cover; */
+  background-size: cover; 
+} */
+
+html {
+  background: black url("./assets/stars.png") repeat top center;
+}
+
+body {
+  background: transparent url("./assets/twinkling.png") repeat top center;
+  animation: twinkling-animation 200s linear infinite;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  font-family: Poppins, "Segoe UI", "Roboto";
+}
+
+@keyframes twinkling-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }

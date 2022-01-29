@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./FilmDetails.css";
 import { BackButton } from "../BackButton/BackButton";
+import { Loader } from "../Loader/Loader";
 
 export const FilmDetails = () => {
   const { id } = useParams();
@@ -13,7 +14,7 @@ export const FilmDetails = () => {
 
   if (error) return <p>Error</p>;
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader />;
 
   const { title, releaseDate, openingCrawl, producers, director } = data.film;
 

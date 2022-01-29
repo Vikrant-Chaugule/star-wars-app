@@ -1,5 +1,9 @@
-import React from "react";
+import { Loader } from "../Loader/Loader";
 
 export const Species = () => {
-  return <div>Species</div>;
+  return (
+    <div>
+      <Loader />
+    </div>
+  );
 };

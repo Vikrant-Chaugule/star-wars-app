@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: #060606;
+  /* background-color: #060606; */
   padding: 0 10%;
 }
 
@@ -49,11 +49,11 @@
     justify-content: space-between;
   }
 
-  .label {
+  .character-label {
     width: 100px;
   }
 
-  .info {
+  .character-info {
     margin-left: 0;
     width: 100%;
     margin-top: 5px;

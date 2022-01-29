@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { GET_ALL_FILMS } from "../../queries/filmsQueries";
 import { ListItem } from "../ListItem/ListItem";
+import { Loader } from "../Loader/Loader";
 import "./Films.css";
 
 export const Films = () => {
@@ -8,7 +9,7 @@ export const Films = () => {
 
   if (error) return <p>Error</p>;
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader />;
 
   return (
     <div className="films">

@@ -54,8 +54,8 @@ export const CharacterDetails = () => {
 const CharacterItem = ({ label, info }: any) => {
   return (
     <div className="character-item">
-      <p id="label">{label}</p>
-      <p id="info">{info}</p>
+      <p className="characterlabel">{label}</p>
+      <p className="character-info">{info}</p>
     </div>
   );
 };
