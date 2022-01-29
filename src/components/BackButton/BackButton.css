@@ -1,0 +1,8 @@
+.back-button {
+  background-color: #141414;
+  color: yellow;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid yellow;
+  width: 100px;
+}

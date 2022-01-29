@@ -23,9 +23,17 @@ export const Films = () => {
       {/* List */}
       <div className="films-list">
         {/* List Item */}
-        {data.allFilms.films.map(({ id, title, releaseDate }: any) => (
-          <FilmItem key={id} id={id} title={title} releaseDate={releaseDate} />
-        ))}
+        {data.allFilms.films.map(
+          ({ id, title, releaseDate }: any, index: string) => (
+            <FilmItem
+              key={id}
+              id={id}
+              index={index}
+              title={title}
+              releaseDate={releaseDate}
+            />
+          )
+        )}
       </div>
     </div>
   );
@@ -35,14 +43,17 @@ interface IFilmItemProp {
   id: string;
   title: string;
   releaseDate: string;
+  index: string;
 }
 
-const FilmItem = ({ id, title, releaseDate }: IFilmItemProp) => {
+const FilmItem = ({ id, title, releaseDate, index }: IFilmItemProp) => {
   return (
     <Link to={`${id}`} className="films-list-item">
-      <div>Icon</div>
-      <div>{title}</div>
-      <div>{releaseDate}</div>
+      <div className="title">
+        <div>{index + 1}</div>
+        <div>{title}</div>
+      </div>
+      <div className="sub-title">Released On {releaseDate}</div>
     </Link>
   );
 };

@@ -1,0 +1,40 @@
+.character-details {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #060606;
+  padding: 0 10%;
+}
+
+.character-details-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  color: yellow;
+}
+
+.character-details-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: #141414;
+  color: yellow;
+  padding: 2rem;
+}
+
+.character-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+#label {
+  width: 150px;
+}
+
+#info {
+  margin-left: 1rem;
+  width: 50rem;
+}

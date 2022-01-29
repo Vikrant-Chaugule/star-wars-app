@@ -3,6 +3,7 @@ import { useFilmDetails } from "../../queries/filmsQueries";
 import { useNavigate } from "react-router-dom";
 
 import "./FilmDetails.css";
+import { BackButton } from "../BackButton/BackButton";
 
 export const FilmDetails = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ export const FilmDetails = () => {
     <div className="film-details">
       {/* Header */}
       <div className="film-details-header">
-        <button onClick={onBack}>Back</button>
+        <BackButton onClick={onBack} />
         <h1>
           {title} ({releaseDate})
         </h1>
