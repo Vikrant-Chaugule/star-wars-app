@@ -30,11 +30,32 @@
   padding: 0.5rem;
 }
 
-#label {
-  width: 150px;
-}
+@media screen and (max-width: 768px) {
+  .character-details-header {
+    display: flex;
+    flex-direction: column;
+  }
 
-#info {
-  margin-left: 1rem;
-  width: 50rem;
+  .character-details-header h1 {
+    margin-top: 20px;
+  }
+
+  .character-details-info {
+    padding: 1rem;
+  }
+
+  .character-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .label {
+    width: 100px;
+  }
+
+  .info {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 5px;
+  }
 }

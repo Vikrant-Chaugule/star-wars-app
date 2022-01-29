@@ -29,24 +29,24 @@
   background-color: #141414;
 }
 
-.films-list-item {
+/* .films-list-item {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   margin: 1rem;
-  background-color: #2f2f2f;
-  /* #141414; */
-  color: yellow;
+  background-color: #2f2f2f; */
+/* #141414; */
+/* color: yellow;
   text-decoration: none;
-}
+} */
 
-.title {
+/* .title {
   display: flex;
 }
 
 .title div:nth-child(2) {
   margin-left: 20px;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .films-header {
@@ -62,11 +62,11 @@
     margin-top: 20px;
   }
 
-  .films-list-item {
+  /* .films-list-item {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-  }
+  } */
 
   .films-header input {
     width: 100%;

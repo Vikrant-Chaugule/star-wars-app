@@ -1,0 +1,39 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #2f2f2f;
+  color: yellow;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+}
+
+.title div:nth-child(2) {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .list-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .title div:nth-child(2) {
+    margin-left: 10px;
+  }
+
+  .sub-title {
+    font-size: 0.7rem;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+}
