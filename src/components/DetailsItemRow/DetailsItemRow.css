@@ -5,12 +5,12 @@
 }
 
 .details-item-label {
-  width: 150px;
+  width: 200px;
 }
 
 .details-item-info {
   margin-left: 1rem;
-  width: 50rem;
+  width: 80%;
   font-weight: bold;
 }
 
@@ -22,13 +22,12 @@
   }
 
   .details-item-label {
-    width: 100px;
     font-size: small;
   }
 
   .details-item-info {
     margin-left: 0;
-    width: 100%;
+    width: 70%;
     margin-top: 5px;
     font-weight: bold;
   }
