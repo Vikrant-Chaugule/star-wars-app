@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 import "./CharacterDetails.css";
 import { BackButton } from "../BackButton/BackButton";
 import { Loader } from "../Loader/Loader";
+import { DetailsItemRowProps } from "../DetailsItemRow/DetailsItemRow";
 
 export const CharacterDetails = () => {
   const { id } = useParams();
   const history = useNavigate();
   const { error, loading, data } = useCharacterDetails(id || "");
-  console.log(error, loading, data);
 
   if (error) return <p>Error</p>;
 
@@ -41,22 +41,13 @@ export const CharacterDetails = () => {
       </div>
 
       <div className="character-details-info">
-        <CharacterItem label="BirthYear" info={birthYear} />
-        <CharacterItem label="Eye Color" info={eyeColor} />
-        <CharacterItem label="Hair Color" info={hairColor} />
-        <CharacterItem label="Height" info={height} />
-        <CharacterItem label="Mass" info={mass} />
-        <CharacterItem label="Home World" info={homeworld.name} />
+        <DetailsItemRowProps label="BirthYear" info={birthYear} />
+        <DetailsItemRowProps label="Eye Color" info={eyeColor} />
+        <DetailsItemRowProps label="Hair Color" info={hairColor} />
+        <DetailsItemRowProps label="Height" info={height} />
+        <DetailsItemRowProps label="Mass" info={mass} />
+        <DetailsItemRowProps label="Home World" info={homeworld.name} />
       </div>
-    </div>
-  );
-};
-
-const CharacterItem = ({ label, info }: any) => {
-  return (
-    <div className="character-item">
-      <p className="characterlabel">{label}</p>
-      <p className="character-info">{info}</p>
     </div>
   );
 };

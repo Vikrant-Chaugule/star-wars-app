@@ -11,6 +11,7 @@ import { Vehicles } from "./components/Vehicles/Vehicles";
 import NavBar from "./components/NavBar/NavBar";
 import { FilmDetails } from "./components/Films/FilmDetails";
 import { CharacterDetails } from "./components/Characters/CharacterDetails";
+import { PlanetDetails } from "./components/Planets/PlanetDetails";
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
           <Route path="/films/:id" element={<FilmDetails />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/characters/:id" element={<CharacterDetails />} />
-
           <Route path="/planets" element={<Planets />} />
+          <Route path="/planets/:id" element={<PlanetDetails />} />
           <Route path="/species" element={<Species />} />
           <Route path="/starships" element={<Starships />} />
           <Route path="/vehicles" element={<Vehicles />} />

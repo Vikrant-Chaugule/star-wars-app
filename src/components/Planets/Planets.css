@@ -1,64 +1,60 @@
-.characters {
+.planets {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  /* background-color: #060606; */
   padding: 0 10%;
 }
 
-.characters-header {
+.planets-header {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
   color: yellow;
 }
 
-.characters-header input {
+.planets-header input {
   width: 30%;
   padding: 0.5rem;
 }
-.characters-list {
+.planets-list {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
   background-color: #141414;
 }
 
-.characters-list-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  margin: 1rem;
-  background-color: #2f2f2f;
-  color: yellow;
-  text-decoration: none;
-}
-
 @media screen and (max-width: 768px) {
-  .characters-header {
+  .planets-header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .characters-list {
+  .planets-list {
     display: flex;
     flex-direction: column;
     background-color: #141414;
     margin-top: 20px;
   }
 
-  .characters-list-item {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-
-  .characters-header input {
+  .planets-header input {
     width: 100%;
     padding: 0.5rem;
     margin-top: 20px;
+  }
+  .title {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .title div:nth-child(2) {
+    margin-left: 10px;
+  }
+
+  .sub-title {
+    font-size: 0.7rem;
+    align-self: flex-start;
+    margin-top: 10px;
   }
 }

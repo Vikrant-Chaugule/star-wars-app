@@ -1,0 +1,35 @@
+.details-item-row {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+.details-item-label {
+  width: 150px;
+}
+
+.details-item-info {
+  margin-left: 1rem;
+  width: 50rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .details-item-row {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+  }
+
+  .details-item-label {
+    width: 100px;
+    font-size: small;
+  }
+
+  .details-item-info {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+}
