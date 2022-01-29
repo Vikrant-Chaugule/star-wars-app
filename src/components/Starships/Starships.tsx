@@ -20,7 +20,7 @@ export const Starships = () => {
 
       <div className="starships-list">
         {data.allStarships.starships.map(
-          ({ id, name, model }: any, index: string) => (
+          ({ id, name, model }: any, index: number) => (
             <ListItem
               key={id}
               id={id}

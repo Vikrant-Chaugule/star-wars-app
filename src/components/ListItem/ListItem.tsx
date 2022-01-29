@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import "./ListItem.css";
 
-interface IListItemProp {
+export interface IListItemProp {
   id: string;
-  index: string;
   title: string;
   subTitle: string;
 }
 
-export const ListItem = ({ id, index, title, subTitle }: IListItemProp) => {
+export const ListItem = ({
+  id,
+  index,
+  title,
+  subTitle,
+}: IListItemProp & { index: number }) => {
   return (
     <Link to={`${id}`} className="list-item">
       <div className="title">

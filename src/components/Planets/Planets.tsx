@@ -20,7 +20,7 @@ export const Planets = () => {
 
       <div className="planets-list">
         {data.allPlanets.planets.map(
-          ({ id, name, population }: any, index: string) => (
+          ({ id, name, population }: any, index: number) => (
             <ListItem
               key={id}
               id={id}

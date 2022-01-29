@@ -20,7 +20,7 @@ export const Films = () => {
 
       <div className="films-list">
         {data.allFilms.films.map(
-          ({ id, title, releaseDate }: any, index: string) => (
+          ({ id, title, releaseDate }: any, index: number) => (
             <ListItem
               key={id}
               id={id}
