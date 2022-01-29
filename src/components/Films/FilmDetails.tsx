@@ -26,13 +26,12 @@ export const FilmDetails = () => {
       {/* Header */}
       <div className="film-details-header">
         <BackButton onClick={onBack} />
-        <h1>
-          {title} ({releaseDate})
-        </h1>
+        <h1>{title}</h1>
       </div>
 
       {/* Details */}
       <div className="films-details-info">
+        <FilmItem label="Release Date" info={releaseDate} />
         <FilmItem label="Description" info={openingCrawl} />
         <FilmItem label="Director" info={director} />
         <FilmItem label="Producers" info={producers} />
@@ -44,8 +43,8 @@ export const FilmDetails = () => {
 const FilmItem = ({ label, info }: any) => {
   return (
     <div className="film-item">
-      <p id="label">{label}</p>
-      <p id="info">{info}</p>
+      <p className="label">{label}</p>
+      <p className="info">{info}</p>
     </div>
   );
 };
