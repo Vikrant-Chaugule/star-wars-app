@@ -8,11 +8,14 @@ import { Planets } from "./components/Planets/Planets";
 import { Species } from "./components/Species/Species";
 import { Starships } from "./components/Starships/Starships";
 import { Vehicles } from "./components/Vehicles/Vehicles";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
     <div className="app">
       <Router>
+        <NavBar />
+
         <Routes>
           <Route path="/films" element={<Films />} />
           <Route path="/characters" element={<Characters />} />
