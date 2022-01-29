@@ -46,7 +46,7 @@ export const Starships = () => {
                 id={id}
                 index={index}
                 title={name}
-                subTitle={`Population - ${population ?? "N/A"}`}
+                subTitle={`Model - ${population ?? "N/A"}`}
               />
             );
           })

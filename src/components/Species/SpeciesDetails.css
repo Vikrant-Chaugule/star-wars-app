@@ -1,0 +1,61 @@
+.species-details {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #060606; */
+  padding: 0 10%;
+}
+
+.species-details-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  color: #ffc107;
+}
+
+.species-details-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: #141414;
+  color: #ffc107;
+  padding: 2rem;
+}
+
+.species-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .species-details-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .species-details-header h1 {
+    margin-top: 20px;
+  }
+
+  .species-details-info {
+    padding: 1rem;
+  }
+
+  .species-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .species-label {
+    width: 100px;
+  }
+
+  .species-info {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 5px;
+  }
+}

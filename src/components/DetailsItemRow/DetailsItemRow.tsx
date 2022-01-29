@@ -18,7 +18,7 @@ export const DetailsItemRowProps = ({ label, info }: IDetailsItemRowProps) => {
         </div>
       );
     }
-    return <p className="details-item-info">{info}</p>;
+    return <p className="details-item-info">{info ?? "N/A"}</p>;
   };
 
   return (
